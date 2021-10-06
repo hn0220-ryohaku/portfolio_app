@@ -1,0 +1,52 @@
+<%= form_with(model: mitsumori, local: true) do |form| %>
+  <% if mitsumori.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mitsumori.errors.count, "error") %> prohibited this mitsumori from being saved:</h2>
+
+      <ul>
+      <% mitsumori.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :car_maker %>
+    <%= form.text_field :car_maker %>
+  </div>
+
+  <div class="field">
+    <%= form.label :v_type %>
+    <%= form.text_area :v_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oil %>
+    <%= form.number_field :oil %>
+  </div>
+
+  <div class="field">
+    <%= form.label :airfilter %>
+    <%= form.number_field :airfilter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wiper %>
+    <%= form.number_field :wiper %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

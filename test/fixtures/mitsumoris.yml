@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_maker: MyString
+  v_type: MyText
+  oil: 1
+  airfilter: 1
+  wiper: 1
+  price: 1
+  user_id: 1
+
+two:
+  car_maker: MyString
+  v_type: MyText
+  oil: 1
+  airfilter: 1
+  wiper: 1
+  price: 1
+  user_id: 1

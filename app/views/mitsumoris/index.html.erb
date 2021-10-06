@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mitsumoris</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Car maker</th>
+      <th>V type</th>
+      <th>Oil</th>
+      <th>Airfilter</th>
+      <th>Wiper</th>
+      <th>Price</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mitsumoris.each do |mitsumori| %>
+      <tr>
+        <td><%= mitsumori.car_maker %></td>
+        <td><%= mitsumori.v_type %></td>
+        <td><%= mitsumori.oil %></td>
+        <td><%= mitsumori.airfilter %></td>
+        <td><%= mitsumori.wiper %></td>
+        <td><%= mitsumori.price %></td>
+        <td><%= mitsumori.user_id %></td>
+        <td><%= link_to 'Show', mitsumori %></td>
+        <td><%= link_to 'Edit', edit_mitsumori_path(mitsumori) %></td>
+        <td><%= link_to 'Destroy', mitsumori, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mitsumori', new_mitsumori_path %>

@@ -1,0 +1,2 @@
+class Mitsumori < ApplicationRecord
+end

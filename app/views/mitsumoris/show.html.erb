@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Car maker:</strong>
+  <%= @mitsumori.car_maker %>
+</p>
+
+<p>
+  <strong>V type:</strong>
+  <%= @mitsumori.v_type %>
+</p>
+
+<p>
+  <strong>Oil:</strong>
+  <%= @mitsumori.oil %>
+</p>
+
+<p>
+  <strong>Airfilter:</strong>
+  <%= @mitsumori.airfilter %>
+</p>
+
+<p>
+  <strong>Wiper:</strong>
+  <%= @mitsumori.wiper %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @mitsumori.price %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @mitsumori.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_mitsumori_path(@mitsumori) %> |
+<%= link_to 'Back', mitsumoris_path %>
